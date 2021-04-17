@@ -54,6 +54,7 @@
             </nav>
          </div>
       </header>
+      
       <div id="sp-mobile-nav-container">
          <div class="overlay-inner-wrap">
             <nav>
@@ -86,30 +87,48 @@
       </div>
       <div id="sp-mobile-nav-bg"></div>
 
-          <div id="sp-wrapper">
-         <section class="sp-intro sp-intro-image banner-background" style="height: 250px" >
-            <div class="intro-body">
-               <div class="intro-title intro-title-1 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">About Us</div>
-            </div>
-         </section>
-         <section class="sp-section text-center" id="sp-about" >
-            <div class="container">
-               <div class="row">
-                  <div class="col-md-6 wow fadeIn text-justify" data-wow-duration="1s" data-wow-delay=".3s">
-                     <p class="inline-text show-on-scroll">
-                        M.N.M.JR.COLLEGE , KANIGIRI was established in 1990 and it is managed by the Pvt. Unaided. It is located in Rural area. 
-                        It is located in KANIGIRI block of PRAKASAM district of ANDHRA PRADESH. The school consists of Grades from 11 to 12.
-                         The school is Co-educational and it doesn't have an attached pre-primary section. The school is Not Applicable in nature 
-                         and is not using school building as a shift-school. Telugu is the medium of instructions in this school. This school is 
-                         approachable by all weather road. In this school academic session starts in April.
-                     </p>
+
+
+            <div id="sp-wrapper">
+               <section class="sp-intro sp-intro-image banner-background" style="height: 250px" >
+                  <div class="intro-body">
+                     <div class="intro-title intro-title-1 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">Mission and Vision</div>
                   </div>
-                  <div class="col-md-6 wow fadeIn" data-wow-duration="1s" data-wow-delay=".3s">
-                     <img class="inline-photo show-on-scroll"src="assets/images/college.jpg" alt="">
-                  </div>
-               </div>
-            </div>
-         </section>
+               </section>
+               <section class="sp-section text-center missionandvision" id="sp-about">
+                <div class="container">
+                   <div class="row">
+                      <div class="col-md-5 wow fadeIn text-justify " data-wow-duration="1s" data-wow-delay=".3s">
+                         <p class="inline-text show-on-scroll icon-dot-circled">
+                            To envisage the dreams of students for a better tomorrow and equip them with best competencies
+                         </p>
+                         <p class="inline-text show-on-scroll icon-dot-circled">
+                            To excel in providing quality education at under graduate and graduate levels. 
+                         </p>
+                      </div>
+                      <div class="col-md-1"></div>
+                      <div class="col-md-5 wow fadeIn text-justify " data-wow-duration="1s" data-wow-delay=".3s">
+                         <p class="inline-text show-on-scroll icon-dot-circled">
+                            To mould the future generation of youngsters into competent global citizens.
+                         </p>
+                         <p class="inline-text show-on-scroll icon-dot-circled">
+                            To be a state of the art institution of engineering in pursuit of excellence, in the service of society.
+                         </p>
+                      </div>
+                   </div>
+                </div>
+             </section>
+             <section class="sp-section text-center">
+                <div class="container">
+                   <div class="row">
+                      <div class="col-md-12">
+                        <p class="inline-text show-on-scroll">
+                            Our priority is to prepare the youth for life by promoting intellectual excellence, uprightness of character, emotional maturity, scientific temper, spirit of healthy competition, co-operation and sportsmanship through co-curricular activities, moral sensitivity to the needs and rights of others specially the most vulnerable, religious tolerance and national integration
+                         </p>
+                      </div>
+                   </div>
+                </div>
+             </section>
       </div>
 
   
@@ -165,6 +184,17 @@
          </div>
       </footer>
       <div id="sp-footer-sizing-helper"></div>
+      <script>
+         const scriptURL = 'https://script.google.com/macros/s/AKfycbzadIWS9fHvSdz-MqXaHG7NA8plVvkZhU1WBt_Ulqi8nM4mqsvkszTWxj0HAzaOAHjo/exec'
+         const form = document.forms['google-sheet']
+       
+         form.addEventListener('submit', e => {
+           e.preventDefault()
+           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+             .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+             .catch(error => console.error('Error!', error.message))
+         })
+       </script>
       <script>var SOPRANO_FONTS = [
          'Montserrat:400,400i,500,500i,600,600i,700,700i',
          'Source Sans Pro:300,300i,400,400i,600,600i,700,700i',

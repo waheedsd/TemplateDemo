@@ -24,7 +24,7 @@
                   <li class="current-menu-item sp-mega-menu mega-3-columns menu-item">
                      <a href="index2.html">Home</a>
                   </li>
-                  <li class="sp-mega-menu mega-1-columns menu-item menu-item-has-children active">
+                  <li class="sp-mega-menu mega-1-columns menu-item menu-item-has-children">
                      <a href="#">About Us</a>
                      <ul class="sub-menu">
                         <li><a href="about.html">About Us</a></li>
@@ -32,7 +32,7 @@
                         <li><a href="management.html">Management Team</a></li>
                      </ul>
                   </li>
-                  <li class="current-menu-item sp-mega-menu mega-1-columns menu-item">
+                  <li class="current-menu-item sp-mega-menu mega-1-columns menu-item active">
                      <a href="courseAndAcademics.html">Courses & Academics</a>
                   </li>
                   <li class="current-menu-item sp-mega-menu mega-1-columns menu-item">
@@ -54,6 +54,7 @@
             </nav>
          </div>
       </header>
+      
       <div id="sp-mobile-nav-container">
          <div class="overlay-inner-wrap">
             <nav>
@@ -86,30 +87,46 @@
       </div>
       <div id="sp-mobile-nav-bg"></div>
 
-          <div id="sp-wrapper">
-         <section class="sp-intro sp-intro-image banner-background" style="height: 250px" >
-            <div class="intro-body">
-               <div class="intro-title intro-title-1 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">About Us</div>
-            </div>
-         </section>
-         <section class="sp-section text-center" id="sp-about" >
-            <div class="container">
-               <div class="row">
-                  <div class="col-md-6 wow fadeIn text-justify" data-wow-duration="1s" data-wow-delay=".3s">
-                     <p class="inline-text show-on-scroll">
-                        M.N.M.JR.COLLEGE , KANIGIRI was established in 1990 and it is managed by the Pvt. Unaided. It is located in Rural area. 
-                        It is located in KANIGIRI block of PRAKASAM district of ANDHRA PRADESH. The school consists of Grades from 11 to 12.
-                         The school is Co-educational and it doesn't have an attached pre-primary section. The school is Not Applicable in nature 
-                         and is not using school building as a shift-school. Telugu is the medium of instructions in this school. This school is 
-                         approachable by all weather road. In this school academic session starts in April.
-                     </p>
+
+
+            <div id="sp-wrapper">
+               <section class="sp-intro sp-intro-image banner-background" style="height: 250px" >
+                  <div class="intro-body">
+                     <div class="intro-title intro-title-1 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">Courses & Academics</div>
                   </div>
-                  <div class="col-md-6 wow fadeIn" data-wow-duration="1s" data-wow-delay=".3s">
-                     <img class="inline-photo show-on-scroll"src="assets/images/college.jpg" alt="">
+               </section>
+               <section id="sp-blog" class="sp-section">
+                  <div class="container" id="sp-blog-inner">
+                     <div class="content-column">
+                        <div class="row">
+                           <div class="col-lg-12">
+                              <article class="sp-blog-block chess sticky">
+                                 <div class="image-column inner-col">
+                                    <div class="sp-blog-image"><a href="#" style="background-image:url('assets/images/mpc-student.jpg');"></a></div>
+                                 </div>
+                                 <div class="meta-column inner-col">
+                                    <h3 class="entry-title"><a href="#">MPC</a></h3>
+                                    <p>
+                                       MPC Group is a part of Science stream. This group is also known as PCM Group. It stands for Physics, Chemistry and Mathematics – the subjects chosen by a student in 12th Science stream. ... After completing 12th standard, students have loads of professional courses to choose from.
+                                    </p>
+                                 </div>
+                              </article>
+                              <article class="sp-blog-block chess sticky">
+                                 <div class="meta-column inner-col">
+                                    <h3 class="entry-title"><a href="#">BiPC</a></h3>
+                                   <p>
+                                    BiPC, popularly known as the Medical stream is a subject combination which is opted by students studying in senior secondary school. The full form of BiPC is Biology, Physics, and Chemistry
+                                   </p>
+                                 </div>
+                                 <div class="image-column inner-col">
+                                    <div class="sp-blog-image"><a href="#" style="background-image:url('assets/images/bipc-student.jpg');"></a></div>
+                                 </div>
+                              </article>
+                           </div>
+                        </div>
+                     </div>
                   </div>
-               </div>
-            </div>
-         </section>
+               </section>
       </div>
 
   
@@ -165,6 +182,17 @@
          </div>
       </footer>
       <div id="sp-footer-sizing-helper"></div>
+      <script>
+         const scriptURL = 'https://script.google.com/macros/s/AKfycbzadIWS9fHvSdz-MqXaHG7NA8plVvkZhU1WBt_Ulqi8nM4mqsvkszTWxj0HAzaOAHjo/exec'
+         const form = document.forms['google-sheet']
+       
+         form.addEventListener('submit', e => {
+           e.preventDefault()
+           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+             .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+             .catch(error => console.error('Error!', error.message))
+         })
+       </script>
       <script>var SOPRANO_FONTS = [
          'Montserrat:400,400i,500,500i,600,600i,700,700i',
          'Source Sans Pro:300,300i,400,400i,600,600i,700,700i',
