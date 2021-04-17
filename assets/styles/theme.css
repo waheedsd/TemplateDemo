@@ -201,3 +201,6 @@ body:not(.sp-active-burger-menu) #sp-header.header-stuck{
     font-size: 30px;
     font-weight: bold;
 }
+.form-control{
+    color: #000 !important;
+}
