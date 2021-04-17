@@ -204,3 +204,31 @@ body:not(.sp-active-burger-menu) #sp-header.header-stuck{
 .form-control{
     color: #000 !important;
 }
+@media (max-width: 991px){
+    .sp-blog-block.chess .image-column.inner-col {
+        width: 100%;
+        display: block !important;
+    }
+    .slider-item > .intro-bg{
+        height: 180px;
+        width: 100%;
+    }
+    .sp-intro{
+        height: 180px !important;   
+    }
+    .sp-intro.fullscreen{
+        min-height: 180px !important; 
+    }
+}
+@media (min-width: 768px){
+    .slider-item > .intro-bg{
+        height: 400px;
+        width: 100%;
+    }
+    .sp-intro{
+        height: 400px !important;   
+    }
+    .sp-intro.fullscreen{
+        min-height: 400px !important; 
+    }
+}

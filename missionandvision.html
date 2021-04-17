@@ -184,17 +184,6 @@
          </div>
       </footer>
       <div id="sp-footer-sizing-helper"></div>
-      <script>
-         const scriptURL = 'https://script.google.com/macros/s/AKfycbzadIWS9fHvSdz-MqXaHG7NA8plVvkZhU1WBt_Ulqi8nM4mqsvkszTWxj0HAzaOAHjo/exec'
-         const form = document.forms['google-sheet']
-       
-         form.addEventListener('submit', e => {
-           e.preventDefault()
-           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-             .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
-             .catch(error => console.error('Error!', error.message))
-         })
-       </script>
       <script>var SOPRANO_FONTS = [
          'Montserrat:400,400i,500,500i,600,600i,700,700i',
          'Source Sans Pro:300,300i,400,400i,600,600i,700,700i',
