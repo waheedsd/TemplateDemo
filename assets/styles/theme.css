@@ -213,7 +213,7 @@ body:not(.sp-active-burger-menu) #sp-header.header-stuck{
         height: 200px;
         width: 100%;
     }
-    .sp-intro{
+    .sp-intro-carousel{
         height: 200px !important;   
     }
     .sp-intro.fullscreen{
@@ -225,7 +225,7 @@ body:not(.sp-active-burger-menu) #sp-header.header-stuck{
         height: 300px;
         width: 100%;
     }
-    .sp-intro{
+    .sp-intro-carousel{
         height: 300px !important;   
     }
     .sp-intro.fullscreen{
@@ -237,7 +237,7 @@ body:not(.sp-active-burger-menu) #sp-header.header-stuck{
         min-height: 600px;
         width: 100%;
     }
-    .sp-intro{
+    .sp-intro-carousel{
         min-height: 600px !important;   
     }
     .sp-intro.fullscreen{
