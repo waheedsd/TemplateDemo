@@ -204,31 +204,43 @@ body:not(.sp-active-burger-menu) #sp-header.header-stuck{
 .form-control{
     color: #000 !important;
 }
-@media (max-width: 991px){
+@media only screen and (max-width: 500px){
     .sp-blog-block.chess .image-column.inner-col {
         width: 100%;
         display: block !important;
     }
     .slider-item > .intro-bg{
-        height: 180px;
+        height: 200px;
         width: 100%;
     }
     .sp-intro{
-        height: 180px !important;   
+        height: 200px !important;   
     }
     .sp-intro.fullscreen{
-        min-height: 180px !important; 
+        min-height: 200px !important; 
     }
 }
-@media (min-width: 768px){
+@media only screen and (min-width: 500px){
     .slider-item > .intro-bg{
-        height: 400px;
+        height: 300px;
         width: 100%;
     }
     .sp-intro{
-        height: 400px !important;   
+        height: 300px !important;   
     }
     .sp-intro.fullscreen{
-        min-height: 400px !important; 
+        min-height: 300px !important; 
+    }
+}
+@media only screen and (min-width:992px) {
+    .slider-item > .intro-bg{
+        min-height: 600px;
+        width: 100%;
+    }
+    .sp-intro{
+        min-height: 600px !important;   
+    }
+    .sp-intro.fullscreen{
+        min-height: 600px !important; 
     }
 }
